@@ -6,19 +6,22 @@ import wishlist from "../assets/img/wishlist.png"
 function navbar() {
   return (
     <>
-      <nav class="relative px-4 py-2 flex justify-between items-center bg-white dark:bg-gray-800 border-b-2 dark:border-gray-600">
-        {/* <a class="text-2xl font-bold text-violet-600 dark:text-white" href="#">
+      <nav className="relative px-4 py-2 flex justify-between items-center bg-white dark:bg-gray-800 border-b-2 dark:border-gray-600">
+        {/* <a className="text-2xl font-bold text-violet-600 dark:text-white" href="#">
         TailwindFlex
     </a> */}
-        <img className="h-10 w-50" src={Logo} alt="logo" />
+        <a href="" >
+          <img className="h-10 w-50" src={Logo} alt="logo" />
+        </a>
+        
 
-        <div class="lg:hidden">
+        <div className="lg:hidden">
           <button
-            class="navbar-burger flex items-center text-red-600 dark:text-gray-100 p-1"
+            className="navbar-burger flex items-center text-red-600 dark:text-gray-100 p-1"
             id="navbar_burger"
           >
             <svg
-              class="block h-6 w-6 fill-current"
+              className="block h-6 w-6 fill-current"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -28,19 +31,19 @@ function navbar() {
           </button>
         </div>
 
-        <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <div class=" relative mx-auto text-gray-600">
+            <div className=" relative mx-auto text-gray-600">
               <input
-                class="border border-gray-300 placeholder-current h-10 px-5 pr-16  rounded-lg text-sm focus:outline-none dark:bg-gray-500 dark:border-gray-50 dark:text-gray-200 "
+                className="border border-gray-300 placeholder-current h-11 px-5 pr-16 w-80 rounded-lg text-sm focus:outline-none dark:bg-gray-500 dark:border-gray-50 dark:text-gray-200 "
                 type="search"
                 name="search"
                 placeholder="Search By title, author or ISBN"
               />
 
-              <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+              <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
                 <svg
-                  class="text-gray-600 dark:text-gray-200 h-4 w-4 fill-current"
+                  className="text-gray-600 dark:text-gray-200 h-4 w-4 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                   version="1.1"
@@ -59,15 +62,15 @@ function navbar() {
           </li>
         </ul>
 
-        <div class="hidden lg:flex">
+        <div className="hidden lg:flex">
           {/* <button
             id="theme-toggle"
             type="button"
-            class="hidden lg:inline-block lg:ml-auto py-1.5 px-3 m-1 text-center bg-gray-100 border border-gray-300 rounded-md text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="hidden lg:inline-block lg:ml-auto py-1.5 px-3 m-1 text-center bg-gray-100 border border-gray-300 rounded-md text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <svg
               id="theme-toggle-dark-icon"
-              class="w-5 h-6 hidden"
+              className="w-5 h-6 hidden"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -76,15 +79,15 @@ function navbar() {
             </svg>
             <svg
               id="theme-toggle-light-icon"
-              class="w-5 h-6 hidden"
+              className="w-5 h-6 hidden"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button> */}
@@ -100,7 +103,7 @@ function navbar() {
           </div>
 
           <a href="">
-            <button class=" py-4 px-7 m-1 text-center bg-red-700 border text-white  hover:bg-red-500 hover:text-gray-100 dark:text-gray-200 dark:bg-red-700 hidden lg:block">
+            <button className=" py-4 px-7 m-1 text-center bg-red-700 border text-white  hover:bg-red-500 hover:text-gray-100 dark:text-gray-200 dark:bg-red-700 hidden lg:block">
               Create Account
             </button>
           </a>
