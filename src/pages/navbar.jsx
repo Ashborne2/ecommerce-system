@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/img/Rakuten_logo.png";
 import cartlogo from "../assets/img/cart.png";
 import wishlist from "../assets/img/wishlist.png"
+import categories from "../assets/img/categories.png"
 
 function navbar() {
   return (
@@ -91,16 +92,22 @@ function navbar() {
               ></path>
             </svg>
           </button> */}
+           <div className="py-2 px-4 flex flex-col items-center">
+            <img className="size-7" src={categories} alt="catimg" />
+            <span>Category</span>
+          </div>
 
-          <div className="py-2 px-6 flex flex-col items-center">
-            <img className="size-7" src={wishlist} alt="cart logo" />
+          <div className="py-2 px-4 flex flex-col items-center">
+            <img className="size-7" src={wishlist} alt="wishimg" />
             <span>Wishlist</span>
           </div>
 
-          <div className="py-2 px-6">
+          <div className="py-2 px-4">
             <img className="size-7" src={cartlogo} alt="cart logo" />
             <span>Cart</span>
           </div>
+
+          
 
           <a href="">
             <button className=" py-4 px-7 m-1 text-center bg-red-700 border text-white  hover:bg-red-500 hover:text-gray-100 dark:text-gray-200 dark:bg-red-700 hidden lg:block">

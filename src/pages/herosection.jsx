@@ -3,7 +3,7 @@ import React from "react";
 function herosection() {
   return (
     <>
-      <div className="flex flex-row m-5 h-96 space-x-1 text-center">
+      <div className="flex flex-row m-5 mt-8 h-96 space-x-1 text-center">
 
         <div className="bg-black opacity-90 w-8/12 text-lime-50">
           <div className="bg-hero-image1 bg-cover flex flex-col items-center space-y-10 h-96 transition ease-in-out hover:scale-[1.02]">

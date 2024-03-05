@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from "./pages/navbar";
 import Herosection from "./pages/herosection";
 import Product from './pages/product';
+import Footer from './pages/footer';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Herosection />
         <Product />
+        <Footer />
       </div>
 
 
