@@ -5,6 +5,7 @@ import Herosection from "./pages/herosection";
 import Product from './pages/product';
 import Footer from './pages/footer';
 import Product_page from './pages/sub_pages/product_page';
+import ActiveSlider from './pages/component/product/ActiveSlider';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <Product />
         <Footer />
         {/* <Product_page /> */}
+
+        {/* <ActiveSlider /> */}
         
       </div>
 
