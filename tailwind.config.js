@@ -13,6 +13,11 @@ module.exports = {
         'latest-book3': "url('/src/assets/img/latest-book3.jpg')",
         'latest-book4': "url('/src/assets/img/latest-book4.jpg')",
         'latest-book5': "url('/src/assets/img/latest-book5.jpg')",
+        'card1': "url('/src/assets/img/visa.png')",
+        'card2': "url('/src/assets/img/master-card.png')",
+        'card3': "url('/src/assets/img/paypal.png')",
+
+
     },
   },
   plugins: [],
